@@ -2,11 +2,35 @@ version: "3.9"
 
 services:
   backend:
-    build: ./Backend
+    build: ./backend
     ports:
       - "8000:8000"
+    depends_on:
+      - db
+    environment:
+      DATABASE_URL: postgresql://postgres:password@db:5432/dermfridge_db
+      GOOGLE_CLIENT_ID: 66857299933-vms1u4olq47f53mq8j494cvie5qkio11.apps.googleusercontent.com
+      GOOGLE_CLIENT_SECRET: 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
+
 
   frontend:
     build: ./frontend
     ports:
       - "3000:80"
+    depends_on:
+      - backend
+
+  db:
+    image: postgres:14
+    restart: always
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: password
+      POSTGRES_DB: dermfridge_db
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"
+
+volumes:
+  postgres_data:

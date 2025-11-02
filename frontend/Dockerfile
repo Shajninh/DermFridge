@@ -1,15 +1,11 @@
-# Use Nginx as the base image
+# Use Nginx as base image
 FROM nginx:alpine
 
-# Remove the default Nginx page
+# Remove the default nginx page
 RUN rm -rf /usr/share/nginx/html/*
 
-# Copy your frontend files into Nginx’s default directory
-COPY homepage.html /usr/share/nginx/html/index.html
-COPY homepage.css /usr/share/nginx/html/homepage.css
+# Copy your frontend files (HTML, CSS, etc.)
+COPY . /usr/share/nginx/html
 
-# Expose port 80 to access via localhost
+# Expose port 80 (for the web browser)
 EXPOSE 80
-
-# Start Nginx
-CMD ["nginx", "-g", "daemon off;"]
