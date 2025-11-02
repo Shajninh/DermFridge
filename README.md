@@ -9,4 +9,4 @@ Proposal: This project presents an AI-powered personal assistant designed to con
 | Amina Lahraoui           | Computer Science    | [aminalahraoui12@gmail.com)            |
 | Leo Belarbi              | Computer Science    | [belarbi.leo@pm.me)                    |
 | Shajnin Howlader         | Computer Science    | [Shajninhowlader@gmail.com)            |
-| Henrik Lam               | Computer Science    | [henriklam5555@gmail.com)              |
+| Henrik Lam               | Computer Science    | [henriklam55@gmail.com)                |
