@@ -7,6 +7,6 @@ Proposal: This project presents an AI-powered personal assistant designed to con
 |--------------------------|---------------------|----------------------------------------|
 | Daniel Vaughn Kenneth    | Computer Science    | [vaughndanielsiburian@gmail.com)       |
 | Amina Lahraoui           | Computer Science    | [aminalahraoui12@gmail.com)            |
-| Leo Belarbi              | Computer Science    | [belarbi.leo@pm.me)                    |
+| Leo Belarbi              | Computer Science    | [leomehdibelarbi@gmail.com)            |
 | Shajnin Howlader         | Computer Science    | [Shajninhowlader@gmail.com)            |
 | Henrik Lam               | Computer Science    | [henriklam55@gmail.com)                |
